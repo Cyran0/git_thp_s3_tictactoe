@@ -79,12 +79,57 @@ def joueurs_2
 end
 
 def gagner
-	if @A1 == "X" && @A2 == "X" && @A3 == "X"
+	if @A1 == "X" && @A2 == "X" && @A3 == "X" 
 		puts "#{@joueur_1} tu as gagné"
 		@tour += 10
-	elsif @B1 == "X" && @B2 == "X" && @B3 == "X"
+	elsif @B1 == "X" && @B2 == "X" && @B3 == "X" 
 		puts "#{@joueur_1} tu as gagné"
 		@tour += 10
+	elsif @C1 == "X" && @C2 == "X" && @C3 == "X" 
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	elsif @A1 == "X" && @B1== "X" && @C1 == "X" 
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	elsif @A2 == "X" && @B2 == "X" && @C2 == "X" 
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	elsif @A3 == "X" && @B3 == "X" && @C3 == "X" 
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	elsif @A1 == "X" && @B2 == "X" && @C3 == "X" 
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	elsif @A3 == "X" && @B2 == "X" && @C1 == "X" 
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	
+	elsif @A1 == "O" && @A2 == "O" && @A3 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif @B1 == "O" && @B2 == "O" && @B3 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif  @C1 == "O" && @C2 == "O" && @C3 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif @A1 == "O" && @B1== "O" && @C1 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif @A2 == "O" && @B2 == "O" && @C2 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif @A3 == "O" && @B3 == "O" && @C3 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif  @A1 == "O" && @B2 == "O" && @C3 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	elsif @A3 == "O" && @B2 == "O" && @C1 == "O"
+		puts "#{@joueur_2} tu as gagné"
+		@tour += 10
+	else
+		puts "on constinue"
 	end
 end
 
@@ -94,11 +139,11 @@ def game
 	joueur
 	@tour = 1
 	while @tour < 9
-	joueurs_1
-	gagner
-	joueurs_2
-	gagner
-end
+		joueurs_1
+		gagner
+		joueurs_2
+		gagner
+	end
 end
 
 game
