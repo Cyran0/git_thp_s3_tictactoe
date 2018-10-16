@@ -21,7 +21,7 @@ joueur_2 = gets.chomp
 
 
 
-puts "#{joueur_1} tu es les X ma guelle"
+puts "#{joueur_1} tu es les X ma gueule"
 puts "#{joueur_2} malheuresement tu es O"
 
 
