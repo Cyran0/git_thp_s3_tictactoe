@@ -78,13 +78,26 @@ def joueurs_2
 	@tour += 1
 end
 
+def gagner
+	if @A1 == "X" && @A2 == "X" && @A3 == "X"
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	elsif @B1 == "X" && @B2 == "X" && @B3 == "X"
+		puts "#{@joueur_1} tu as gagné"
+		@tour += 10
+	end
+end
+
+
 def game
 	board
 	joueur
 	@tour = 1
 	while @tour < 9
 	joueurs_1
+	gagner
 	joueurs_2
+	gagner
 end
 end
 
