@@ -27,12 +27,14 @@ puts "#{joueur_2} malheuresement tu es O"
 
 
 tour = 0
-9.times do 
+while tour < 9
+
+	if A1 == " " 
 
 	print "#{joueur_1} ou tu veux poser ton X"
 	choix = gets.chomp
 	if choix == "A1"
-			A1 = "X"
+		A1 = "X"
 	elsif choix == "A2"
 		A2 = "X"
 	elsif choix == "A3"
